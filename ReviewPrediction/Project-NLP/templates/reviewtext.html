@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style>
+body {
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#15ADDC;
+}
+section{
+height:100%;
+width:100%;
+  position:absolute ;  background:radial-gradient(#333,#000);
+}
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+h2{
+    position:absolute ;
+    top:40%;
+    width:100%;
+	  font-family: 'Courgette', cursive;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding:20px;
+  text-align: center;
+}
+
+h1   
+{color:#EA4916;
+}
+
+.checked {
+  color: orange;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+̣12.ml2 {
+  font-weight: 900;
+  font-size: 10.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width:100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+  animation-duration: 10s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+</style>
+<body>
+<h1 style="font-size:35px" vc class="ml2" align="center">AMAZON'S CELL PHONE REVIEWS ANALYSIS</h1>
+<div class="bg-image"></div>
+<div class="bg-text">
+<p  style="font-size:20px">
+Unlocked mobiles are preferred by most of the people nowadays.
+Amazon, as we all know, it is one of the best multinational company which provides service across many countries.
+It endows unlocked mobiles according to customer's interest.
+We've worked on the key points of how the customers are rating and giving reviews to a particular product.
+</p>
+
+<p style="font-size:15px">Happy:  &#128522;
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checkked"></span>
+</p>
+
+<p style="font-size:15px">Satisfied:  &#128528;
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star "></span>
+</p>
+
+<p style="font-size:15px">Sad:  &#128532;
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star "></span>
+</p>
+<br> 
+<br>
+<form name="passdata" action="/page">
+<center><button  class="button">EXIT</button><center>
+</form>
+</div>
+</div>
+<div class="leaf">
+ <div><img src="https://media.giphy.com/media/hVlZnRT6QW1DeYj6We/giphy.gif" height="80px" weight="80px"></img></div>
+      <div><img src="https://3.bp.blogspot.com/-zKvV3I5w1gE/WKawhjo8E7I/AAAAAAAGYdE/guJ6eRW_48cmpOkt8gp6n84Xf0sJn-RrwCLcB/s1600/AW379197_01.gif" height="80px" width="80px"></img></div>
+      <div>  <img src="https://3.bp.blogspot.com/-4kR92Bpx1_A/WJsvlRpWOVI/AAAAAAAF3r4/FCYa4aDnaUkBs10_p_6uE1iucWFrYwepACLcB/s1600/AW375216_20.gif" height="80px" width="80px" ></img></div>
+      <div><img  src="https://i.pinimg.com/originals/0e/3e/e5/0e3ee551876e1ad2a39f89e4adf9168a.gif" height="80px" width="80px"></img></div>
+      <div> <img src="https://i.pinimg.com/originals/f2/36/52/f23652e5ebbd80be8a9e3fb8644436e8.gif" height="80px" width="80px"></img></div>
+      <div> <img src="https://i.pinimg.com/originals/c0/a6/fa/c0a6fade93a7299e3e48b6b3d0623092.gif" height="80px" width="80px"></div>
+      <div> <img src="https://media.giphy.com/media/lRXY41yFFi9RfNXyPN/giphy.gif" height="80px" width="80px"></div>
+      </div>
+     
+     <div class="leaf leaf1">
+     <div><img src="https://media0.giphy.com/media/PmuLLvty3SDOIaEh77/source.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://media.giphy.com/media/LOnt6uqjD9OexmQJRB/giphy.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://media1.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif" height="80px" width="80px" ></img></div>
+     <div><img  src="https://media3.giphy.com/media/QtwALf8pb45bI8qka0/source.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://media3.giphy.com/media/WtDLxQWQWLtw3oIXTy/source.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://media.giphy.com/media/QWvra259h4LCvdJnxP/giphy.gif" height="80px" width="80px"></div>
+     <div><img src="https://i.pinimg.com/originals/e9/ab/30/e9ab30fdcadf40bdc095a1e317f3851c.gif" height="80px" width="80px"></div>
+     </div>
+     
+     <div class="leaf leaf2">
+     <div><img src="https://media.giphy.com/media/hVlZnRT6QW1DeYj6We/giphy.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://3.bp.blogspot.com/-zKvV3I5w1gE/WKawhjo8E7I/AAAAAAAGYdE/guJ6eRW_48cmpOkt8gp6n84Xf0sJn-RrwCLcB/s1600/AW379197_01.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://3.bp.blogspot.com/-4kR92Bpx1_A/WJsvlRpWOVI/AAAAAAAF3r4/FCYa4aDnaUkBs10_p_6uE1iucWFrYwepACLcB/s1600/AW375216_20.gif" height="80px" width="80px" ></img></div>
+     <div><img  src="https://i.pinimg.com/originals/0e/3e/e5/0e3ee551876e1ad2a39f89e4adf9168a.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://i.pinimg.com/originals/f2/36/52/f23652e5ebbd80be8a9e3fb8644436e8.gif" height="80px" width="80px"></img></div>
+     <div><img src="https://i.pinimg.com/originals/c0/a6/fa/c0a6fade93a7299e3e48b6b3d0623092.gif" height="80px" width="80px"></div>
+      <div> <img src="https://media.giphy.com/media/lRXY41yFFi9RfNXyPN/giphy.gif" height="80px" width="80px"></div>     
+</div>
+<script>
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  </script>
+</body>
+</html> 
+
+
+
